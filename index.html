@@ -5,51 +5,58 @@
   <meta charset="utf-8">
   <title>Home | Katrina Schwieterman</title>
   <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html">home</a>
-    <a href="about.html">about</a>
-  </nav>
-  
-  <article>
+  <section class="container">
+    <nav>
+      <a href="index.html"><i class="fa fa-home" aria-hidden="true" fa-3x></i> home</a>
+      <a href="about.html"><i class="fa fa-star" aria-hidden="true"></i> about</a>
+      <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> contact</a>
+    </nav>
 
     <header>
       <h1>Katrina Schwieterman</h1>
+      <h2>Content Strategy  |  User Experience  |  Technical Writing</h2>
     </header>
 
-    <section>
-      <h2>Content Strategy | User Experience | Technical Writing</h2>
-      
-    <!--more links that don't have destinations just yet-->
-      <img src="images/mce_logo.jpeg" alt="media center logo" >
-      <h3><a href="#" target="_blank">Media Center</a></h3>
-      <p>UI text and help content for four releases of Media Center</p>
-      
-      <img src="images/rdfn_logo.png" alt="redfin logo" >
-      <h3><a href="#" target="_blank">Redfin</a></h3>
-      <p>Copywriting for email, advertising, and website marketing</p>
-      
-      <img src="images/hbo_logo.png" alt="hbonow logo" >
-      <h3><a href="#" target="_blank">HBO NOW</a></h3>
-      <p>UI text and help content for HBO's streaming platforms</p>
-      
-      <img src="images/code_logo.png" alt="coding logo" >
-      <h3><a href="https://github.com/trinasch/semantic_tags" target="_blank">Coding Projects</a></h3>
-      <p>Putting HTML5 and (eventually) CSS3 to good use</p>
-    </section>
-  </article>
-  
-  <footer>
-    <nav>
-    <!--TO DO: figure out if I need a copyright page-->
-      <a href="#">&copy; 2017</a>
-      <a href="https://www.linkedin.com/in/kschwieterman/" target="_blank">Linkedin</a>
-      <a href="https://kschwieterman.carbonmade.com/" target="_blank">Carbonmade</a>
-    </nav>
-  </footer>
-  
+      <!--more links that don't have destinations just yet-->
+    <article>
+      <section class="card">  
+        <img src="images/mce_logo.jpeg" alt="media center logo" >
+        <h3><a href="#" target="_blank">Media Center</a></h3>
+        <p>UI text and help content for four releases of Media Center</p>
+      </section>
+
+      <section class="card">
+        <img src="images/rdfn_logo.png" alt="redfin logo" >
+        <h3><a href="#" target="_blank">Redfin</a></h3>
+        <p>Copywriting for email, advertising, and website marketing</p>
+      </section>
+
+      <section class="card">
+        <img src="images/hbo_logo.png" alt="hbonow logo" >
+        <h3><a href="#" target="_blank">HBO NOW</a></h3>
+        <p>UI text and help content for HBO's streaming platforms</p>
+      </section>
+
+      <section class="card">
+        <img src="images/code_logo.png" alt="coding logo" >
+        <h3><a href="https://github.com/trinasch/semantic_tags" target="_blank">Coding Projects</a></h3>
+        <p>Putting HTML5 and (eventually) CSS3 to good use</p>
+      </section>
+    </article>
+
+    <footer>
+      <nav>
+      <!--TO DO: figure out if I need a copyright page-->
+        <a href="#">&copy; 2017</a>
+        <a href="https://www.linkedin.com/in/kschwieterman/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" fa-3x></i> Linkedin</a>
+      </nav>
+    </footer>
+  </section>
 </body>
 
 </html>

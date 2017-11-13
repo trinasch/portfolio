@@ -1,39 +1,49 @@
 body {
   font-family: arial, sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 70%;
+  margin:auto;
+  background-color:aliceblue;
+}
+
+nav {
+  background-color: lightgrey;
+  padding: 10px 0px;
 }
 
 nav a {
-  color: black;
+  color: dimgray;
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none; 
-  padding: 10px 15px 10px 15px;
-  background-color: lightgray;
+  margin-left: 20px;
 }
 
 a:visited {
+  color: gray;
+}
+
+header {
+  margin: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  padding-top: 30px 0px;
+}
+
+header h2 {
   color: dimgray;
+  font-weight: normal;
 }
 
 article {
-  max-width: 750px;
-  margin: 1em;
-}
-
-h1 {
-  font-size: 2em;
-  padding: 10px;
-  background: yellow;
-}
-
-h2 {
-  color: darkgray;
-}
-
-img {
-  width: 100px;
-  height: auto;
+  align-items: center;
+  margin: 20px;
 }
 
 article a {
@@ -41,21 +51,56 @@ article a {
   text-decoration: none;
 }
 
-h3 + p {
-  color: darkgray;
+img {
+  width: 125px;
+  height: auto;
 }
 
-p.flat-button {
-  text-transform: uppercase;
+h3 {
+  color: dimgray;
+}
+
+p, form {
+  color: dimgray;
+}
+
+.card {
+  float:left;
+  width:25%;
+  min-width: 250px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  height: 230px;
+}
+
+input[type=email] {
+  width: 50%;
+  height: 2em;
+}
+input[type=text] {
+  width: 50%;
+  height: 7em;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color:yellow;
+  border:1px solid gray;
+  color: dimgray;
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: 2em;
-  font-family: monospace;
-  text-align: center; 
+  text-transform: uppercase;
+  padding:3px;
+  font-family:'Roboto Mono', monospace;
 }
 
 footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  clear:both;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: lightgrey;
 }
