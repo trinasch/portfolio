@@ -1,62 +1,95 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">  
 <head>
-  <meta charset="utf-8">
   <title>Home | Katrina Schwieterman</title>
-  <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
 </head>
 
 <body>
-  <section class="container">
-    <nav>
-      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> home</a>
-      <a href="about.html"><i class="fa fa-star" aria-hidden="true"></i> about</a>
-      <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> contact</a>
-    </nav>
+    
+<!--responsive navigation, sticky to top, full bleed -->
 
-    <header>
-      <h1>Katrina Schwieterman</h1>
-      <h2>Content Strategy  |  User Experience  |  Technical Writing</h2>
-    </header>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav my-1">
+        <a class="nav-item nav-link active text-uppercase" href="/index.html">home</a>
+        <a class="nav-item nav-link text-uppercase" href="/about.html">about</a>
+        <a class="nav-item nav-link text-uppercase" href="/favorites.html">favorites</a>
+        <a class="nav-item nav-link text-uppercase" href="/contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+  
+<!-- hero section, full bleed -->
 
-      <!--more links that don't have destinations just yet-->
-    <article>
-      <section class="card">  
-        <img src="images/mce_logo.jpeg" alt="media center logo" >
-        <h3><a href="#" target="_blank">Media Center</a></h3>
-        <p>UI text and help content for four releases of Media Center</p>
-      </section>
+  <header class="jumbotron jumbotron-fluid bg-primary text-white">
+    <div class="container">
+      <h1 class="display-5">Katrina Schwieterman</h1>
+      <p class="lead">Content Strategy  |  User Experience  |  Technical Writing</p>
+    </div>
+  </header>  
 
-      <section class="card">
-        <img src="images/rdfn_logo.png" alt="redfin logo" >
-        <h3><a href="#" target="_blank">Redfin</a></h3>
-        <p>Copywriting for email, advertising, and website marketing</p>
-      </section>
+<!--more links that don't have destinations just yet-->
+  <article class="container">
+    <div class="card-deck">
 
-      <section class="card">
-        <img src="images/hbo_logo.png" alt="hbonow logo" >
-        <h3><a href="#" target="_blank">HBO NOW</a></h3>
-        <p>UI text and help content for HBO's streaming platforms</p>
-      </section>
+      <div class="card">
+        <h6 class="card-header text-uppercase">HBO</h6>
+        <div class="card-body">
+          <p class="card-text">UI text and help content for HBO's streaming platforms</p>
+        </div>
+        <img class="card-img-bottom p-4" src="images/hbo_logo.png" alt="hbonow logo">      
+      </div>
 
-      <section class="card">
-        <img src="images/code_logo.png" alt="coding logo" >
-        <h3><a href="https://github.com/trinasch/semantic_tags" target="_blank">Coding Projects</a></h3>
-        <p>Putting HTML5 and (eventually) CSS3 to good use</p>
-      </section>
-    </article>
+      <div class="card">
+        <h6 class="card-header text-uppercase">Redfin</h6>
+        <div class="card-body">
+          <p class="card-text">Copywriting for email, advertising, and website marketing</p>
+        </div>
+        <img class="card-img-bottom p-4" src="images/rdfn_logo.png" alt="redfin logo">        
+      </div>
+      
+      <div class="card">
+        <h6 class="card-header text-uppercase">Media Center</h6>
+        <div class="card-body">
+          <p class="card-text">UI text and help content for four releases of Media Center</p>
+        </div>
+        <img class="card-img-bottom p-4" src="images/mce_logo.jpeg" alt="media center logo">
+      </div>
+      
+      <div class="card">
+        <h6 class="card-header text-uppercase">Code</h6>
+        <div class="card-body">
+          <p class="card-text">Putting HTML5 and CSS3 to good use</p>
+        </div>
+        <img class="card-img-bottom p-4" src="images/code_logo.png" alt="coding logo">     
+      </div>
+      
+    </div>
+  </article>
 
-    <footer>
-      <nav>
-      <!--TO DO: figure out if I need a copyright page-->
-        <a href="#">&copy; 2017</a>
-        <a href="https://www.linkedin.com/in/kschwieterman/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
-      </nav>
-    </footer>
-  </section>
+<!--Footer responsive, centered-->
+  <footer class="nav navbar-light bg-light justify-content-center py-3">
+      <span class="navbar-text">&copy; 2017 Katrina Schwieterman</span>
+      <a class="nav-item nav-link text-uppercase" href="https://www.linkedin.com/in/kschwieterman/">Linkedin</a>
+  </footer>
+  
+<!--/Footer-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
